@@ -1,0 +1,32 @@
+<!--ACEPT LIMIT FROM USER AND PRINT FOLLOWING PATTERN USING JAVASCRIPT....
+*
+* *
+* * *
+* * * *
+-->
+
+<html>
+ <body>
+ <form>
+  Enter Limit-
+  <input type="text" id="t1">
+  <br><br><input type="button" value="PRINT PATTERN" onclick="pat()">
+ </form>
+ </body>
+</html>
+
+<script>
+function pat()
+{
+ var n=document.getElementById("t1").value;
+ document.write("Pattern-<br>");
+ for(i=1;i<=n;i++)
+ {
+  for(j=1;j<=i;j++)
+  {
+   document.write("*");
+  }
+  document.write("<br>");
+ }
+ }
+</script>
